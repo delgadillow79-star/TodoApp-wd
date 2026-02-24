@@ -7,4 +7,4 @@ const PORT = 3001;
 
 server.listen(PORT, () => {
     console.log('El servidor esta corriendo');
-})
+});
