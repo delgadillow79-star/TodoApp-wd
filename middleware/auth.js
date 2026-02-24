@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken');
 
 const userExtractor =  async (request, response, next) => {
   try {
-    const token = (request.cookies.accesToken);
+    const token = (request.cookies?.accesToken);
   if (!token) {
     return response.sendStatus(401);
   }
